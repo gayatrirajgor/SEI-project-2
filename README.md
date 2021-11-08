@@ -17,3 +17,20 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 * Git & HitHub
 * Insomnia 
 * Axios
+
+## Approach 
+### Routes
+The routes to the various pages were built with React as well as BrowserRouter, Switch and Route from React-Router-DOM.
+
+```javascript
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/characters" component={CharacterIndex}/>
+          <Route exact path="/characters/:id" component={CharacterDetail}/>
+          <Route exact path="/episodes" component={EpisodeIndex}/>
+          <Route exact path="/episodes/:id" component={EpisodeDetail}/>
+        </Switch>
+      </BrowserRouter>
+```
