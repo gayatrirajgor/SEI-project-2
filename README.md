@@ -1,5 +1,7 @@
-# Final Space API 
-I was assigned a partnered project to design a React application that utilises a public API for my second project on the Software Engineering Immersive at General Assembly.
+# Final Space - Front-End React Project
+For my second project on the Software Engineering Immersive at General Assembly, I was assigned a 48-hour paired hackathon to design a React application that uses a public API.
+
+This was deployed via Netlify and can be accessed [here](https://final-space-project.netlify.app/).
 
 ## Brief 📃
 * Consume a public API
@@ -15,6 +17,3 @@ I was assigned a partnered project to design a React application that utilises a
 * Git & HitHub
 * Insomnia 
 * Axios
-
-## Deployment
-https://final-space-project.netlify.app/ 
