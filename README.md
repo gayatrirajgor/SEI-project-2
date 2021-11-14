@@ -60,3 +60,5 @@ useEffect(()=> {
     getData()
   },[])
 ```
+#### Search
+We added a search option for the user, so that they could search for characters. 
