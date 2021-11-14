@@ -61,4 +61,17 @@ useEffect(()=> {
   },[])
 ```
 #### Search
-We added a search option for the user, so that they could search for characters. 
+We gave the user the ability to search for characters by adding a search option. To do this, we utilised a useEffect to search through the characters array and return the character that matched what the user typed into the search field.
+
+```javascript
+useEffect(() => {
+    const filteredCharac = () => {
+      const regexSearch = new RegExp(search, 'i') 
+      const filtered = characterArray.filter(character => {
+        return regexSearch.test(character.name)
+      })
+      setFiltered(filtered)
+    } 
+    filteredCharac()
+  }, [search])
+```
