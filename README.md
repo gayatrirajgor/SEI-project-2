@@ -46,3 +46,17 @@ The homepage included a hero image along with two buttons. The first button send
 
 ### All Characters 
 To display all the characters from the show, we used an axios request from the API within a useEffect and updated the state of the hook.
+
+```javascript
+useEffect(()=> {
+    const getData = async() => {
+      try {
+        const { data } = await axios.get('https://finalspaceapi.com/api/v0/character/')
+        setCharacterArray(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getData()
+  },[])
+```
