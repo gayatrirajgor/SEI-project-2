@@ -45,7 +45,7 @@ The homepage included a hero image along with two buttons. The first button send
 <img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
 
 ### All Characters 
-To display all the characters from the show, we used an axios request from the API within a useEffect and updated the state of the hook.
+To display all of the show's characters, we used an axios request from the API within a useEffect and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma.
 
 ```javascript
 useEffect(()=> {
