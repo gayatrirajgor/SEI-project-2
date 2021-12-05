@@ -17,6 +17,7 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 * Git & HitHub
 * Insomnia 
 * Axios
+* Animate CSS 
 * [Final Space API](https://finalspaceapi.com/)
 
 ## Approach 
@@ -25,7 +26,7 @@ We first researched a number of APIs and decided to showcase data based on the T
 ### Routes
 The routes to the various pages were built with React as well as BrowserRouter, Switch and Route from React-Router-DOM.
 
-```javascript
+```js
       <BrowserRouter>
         <Navbar />
         <Switch>
@@ -47,7 +48,7 @@ The homepage included a hero image along with two buttons. The first button send
 ### All Characters 
 To display all of the show's characters, we used an axios request from the API within a useEffect and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma.
 
-```javascript
+```js
 useEffect(()=> {
     const getData = async() => {
       try {
