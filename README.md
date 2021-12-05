@@ -61,7 +61,7 @@ useEffect(()=> {
     getData()
   },[])
 ```
-#### Search
+### Search
 We gave the user the ability to search for characters by adding a search option. To do this, we utilised a useEffect to search through the characters array and return the character that matched what the user typed into the search field.
 
 ```javascript
