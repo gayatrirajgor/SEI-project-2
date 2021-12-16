@@ -21,7 +21,7 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 * [Final Space API](https://finalspaceapi.com/)
 
 ## Approach 
-We first researched a number of APIs and decided to showcase data based on the TV show, Final Space. 
+We first researched a number of APIs and decided to showcase data based on the TV show, Final Space.
 
 ### Routes
 The routes to the various pages were built with React as well as BrowserRouter, Switch and Route from React-Router-DOM.
@@ -46,7 +46,7 @@ The homepage included a hero image along with two buttons. The first button send
 <img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
 
 ### All Characters 
-To display all of the show's characters, we used an axios request from the API within a useEffect and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma.
+To display all of the show's characters, we used an axios request from the API within a `useEffect` and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma.
 
 ```js
 useEffect(()=> {
@@ -62,7 +62,7 @@ useEffect(()=> {
   },[])
 ```
 ### Search
-We gave the user the ability to search for characters by adding a search option. To do this, we utilised a useEffect to search through the characters array and return the character that matched what the user typed into the search field.
+We gave the user the ability to search for characters by adding a search option. To do this, we utilised a `useEffect` to search through the characters array and return the character that matched what the user typed into the search field.
 
 ```javascript
 useEffect(() => {
