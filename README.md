@@ -4,7 +4,7 @@ For my second project on the Software Engineering Immersive at General Assembly,
 This was deployed via Netlify and can be accessed [here](https://final-space-project.netlify.app/).
 
 ## Brief 📃
-* Consume a public API
+* Build a React application that consumes a public API
 * The app should contain several components and include a router with several 'pages'.
 * Be deployed online 
 
@@ -14,14 +14,26 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 * CSS3
 * Bulma 
 * FontAwesome 
-* Git & HitHub
+* Git & GitHub
 * Insomnia 
 * Axios
 * Animate CSS 
 * [Final Space API](https://finalspaceapi.com/)
 
-## Approach 
+## Approach ✏️
 We first researched a number of APIs and decided to showcase data based on the TV show, Final Space.
+
+#### Day 1
+* utilised Insomnia to examine what data we would receive from the various endpoints 
+* discussed how we would show this on the front end. 
+
+#### Day 2
+* Constructed all of the components we required 
+* Set up the routes for the components
+
+#### Day 3 (AM)
+* Worked on styling 
+* Refactored code 
 
 ### Routes
 The routes to the various pages were built with React as well as BrowserRouter, Switch and Route from React-Router-DOM.
@@ -39,14 +51,14 @@ The routes to the various pages were built with React as well as BrowserRouter, 
       </BrowserRouter>
 ```
 
-## Components 
-### Homepage
+### Components 
+#### Homepage
 The homepage included a hero image along with two buttons. The first button sends the user to all of the show's characters, while the second button brings the user to all of the show's episodes.
 
 <img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
 
-### All Characters 
-To display all of the show's characters, we used an axios request from the API within a `useEffect` and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma.
+#### All Characters 
+To display all of the show's characters, we used an axios request from the API within a `useEffect` and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma. The cards were then wrapped in a link, allowing the user to click on the card to learn more about the particular characters and episodes.
 
 ```js
 useEffect(()=> {
@@ -61,10 +73,10 @@ useEffect(()=> {
     getData()
   },[])
 ```
-### Search
+#### Search
 We gave the user the ability to search for characters by adding a search option. To do this, we utilised a `useEffect` to search through the characters array and return the character that matched what the user typed into the search field.
 
-```javascript
+```js
 useEffect(() => {
     const filteredCharac = () => {
       const regexSearch = new RegExp(search, 'i') 
