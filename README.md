@@ -88,3 +88,6 @@ useEffect(() => {
     filteredCharac()
   }, [search])
 ```
+
+## Wins 🏆
+* Successfully mapping data from a public API
