@@ -73,8 +73,11 @@ useEffect(()=> {
     getData()
   },[])
 ```
+<img width="1433" alt="Screenshot 2021-12-20 at 19 06 47" src="https://user-images.githubusercontent.com/59033443/146819523-6ee83738-8d7d-4099-90a2-91a6642692be.png">
+
 #### Search
-We gave the user the ability to search for characters by adding a search option. To do this, we utilised a `useEffect` to search through the characters array and return the character that matched what the user typed into the search field.
+We gave the user the ability to search for characters by adding a search option. To do this, we utilised a `useEffect` to search through the characters array and return the character that matched what the user typed into the search field. 
+The screenshot below shows that when a user types 'q' into the search bar, the characters that begin with Q are retrieved.
 
 ```js
 useEffect(() => {
@@ -87,7 +90,12 @@ useEffect(() => {
     } 
     filteredCharac()
   }, [search])
-```
+``` 
+<img width="1431" alt="Screenshot 2021-12-20 at 19 08 07" src="https://user-images.githubusercontent.com/59033443/146819612-b89a438c-f639-4b30-99ca-007a4f9f198f.png">
+
+#### Individual Characters Page
+
+#### Individual Episodes Page
 
 ## Wins 🏆
 * Successfully mapping data from a public API
