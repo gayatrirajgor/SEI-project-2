@@ -111,6 +111,38 @@ useEffect(() => {
 <img width="1431" alt="Screenshot 2021-12-20 at 19 08 07" src="https://user-images.githubusercontent.com/59033443/146819612-b89a438c-f639-4b30-99ca-007a4f9f198f.png">
 
 #### Individual Characters Page
+The `id` was passed through the `useEffect` to get the data about the individual characters, and we had to get the data from another end point to get the quotes said by those characters. Once all the data had been received, they were styled as tiles with Bulma.
+```js
+useEffect(() => {
+    const getData = async () => {
+      try {
+        const { data } = await axios.get(`https://finalspaceapi.com/api/v0/character/${id}`)
+        setCharacter(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    const getQuotes = async () => {
+      try {
+        const { data } = await axios.get('https://finalspaceapi.com/api/v0/quote')
+        setQuotes(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getData()
+    getQuotes()
+  }, [id])
+```
+In order to display the quotes on the front end, we utilised `filter` to return quotes said by those characters.
+```js
+{quotes.filter(quote => quote.by === character.name).map((quote,index)=> {
+                  return (
+                    <li key={index}>{quote.quote}</li>
+                  )
+})}
+```
+<img width="1671" alt="Screenshot 2021-12-21 at 17 22 05" src="https://user-images.githubusercontent.com/59033443/146972339-2c318540-ada5-491b-99f8-e310ace8ab97.png">
 
 #### Individual Episodes Page
 
