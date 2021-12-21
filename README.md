@@ -69,12 +69,20 @@ The routes to the various pages were built with React as well as BrowserRouter, 
 ```
 
 ### Components 
-#### Homepage
+* [Home](#home)
+* [Characters](#characters) (display all characters)
+* [Episodes](#episodes) (display all episodes)
+* [Individual Character](#character) (displays information about individual character)
+* [Individual Epsiode](#episode) (displays information about individual episode)
+
+<a name="home"></a>
+### Homepage
 The homepage included a hero image along with two buttons. The first button sends the user to all of the show's characters, while the second button brings the user to all of the show's episodes.
 
 <img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
 
-#### All Characters 
+<a name="characters"></a>
+### All Characters 
 To display all of the show's characters, we used an axios request from the API within a `useEffect` and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma. The cards were then wrapped in a link, allowing the user to click on the card to learn more about the particular characters and episodes.
 
 ```js
@@ -110,7 +118,11 @@ useEffect(() => {
 ``` 
 <img width="1431" alt="Screenshot 2021-12-20 at 19 08 07" src="https://user-images.githubusercontent.com/59033443/146819612-b89a438c-f639-4b30-99ca-007a4f9f198f.png">
 
-#### Individual Characters Page
+<a name="episodes"></a>
+### All Episodes
+
+<a name="character"></a>
+### Individual Characters Page
 The `id` was passed through the `useEffect` to get the data about the individual characters, and we had to get the data from another end point to get the quotes said by those characters. Once all the data had been received, they were styled as tiles with Bulma.
 ```js
 useEffect(() => {
@@ -144,7 +156,10 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 ```
 <img width="1671" alt="Screenshot 2021-12-21 at 17 22 05" src="https://user-images.githubusercontent.com/59033443/146972339-2c318540-ada5-491b-99f8-e310ace8ab97.png">
 
-#### Individual Episodes Page
+
+<a name="episode"></a>
+### Individual Episodes Page
+
 
 <a name="wins"></a>
 ## 5. Wins & Challenges 🏆
