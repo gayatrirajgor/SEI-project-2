@@ -120,6 +120,22 @@ useEffect(() => {
 
 <a name="episodes"></a>
 ### All Episodes
+We utilised the same approach to display all of the episodes of the show as we did to showcase all of the characters.
+```js
+useEffect(() => {
+    const getData = async() => {
+      try {
+        const { data } = await axios.get('https://finalspaceapi.com/api/v0/episode')
+        setEpisodeArray(data)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    getData()
+  },[])
+```
+<img width="1694" alt="Screenshot 2021-12-21 at 17 50 16" src="https://user-images.githubusercontent.com/59033443/146975745-399082ab-cbd0-4a73-8ad2-210632ed2b0c.png">
+
 
 <a name="character"></a>
 ### Individual Characters Page
@@ -159,6 +175,7 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 
 <a name="episode"></a>
 ### Individual Episodes Page
+
 
 
 <a name="wins"></a>
