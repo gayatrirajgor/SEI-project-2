@@ -140,7 +140,7 @@ useEffect(() => {
 
 <a name="character"></a>
 ### Individual Characters Page
-The `id` was passed through the `useEffect` to get the data about the individual characters, and we had to get the data from another end point to get the quotes said by those characters. Once all the data had been received, they were styled as tiles with Bulma.
+The `id` was passed through the `useEffect` to get the data about the individual characters, and we had to get the data from another endpoint to get the quotes said by those characters. Once all the data had been received, they were styled as tiles with Bulma.
 ```js
 useEffect(() => {
     const getData = async () => {
