@@ -42,8 +42,8 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 We first researched a number of APIs and decided to showcase data based on the TV show, Final Space.
 
 ### Day 1
-* utilised Insomnia to examine what data we would receive from the various endpoints 
-* discussed how we would show this on the front end. 
+* Utilised Insomnia to examine what data we would receive from the various endpoints 
+* Discussed how we would show this on the front end. 
 
 ### Day 2
 * Constructed all of the components we required 
@@ -185,6 +185,7 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 * Successfully mapping data from a public API
 
 ### Challenges 
+I was using Bulma for the first time throughout this project, thus it took some time to become familiar with the framework. However, after I realised how it worked, I could see the advantages of using it for styling.
 
 <a name="ideas"></a>
 ## 6. Future Ideas 💭
