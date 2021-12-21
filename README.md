@@ -1,14 +1,30 @@
 # Final Space 👾 - Front-End React Project
+
+by [Gayatri](https://github.com/gayatrirajgor) and [Ricardo](https://github.com/rjriverac)
+
+## Table of Contents
+|No. | Content                      | 
+|----|------------------------------|
+|1   | [Project Overview](#overview)|
+|2   | [Project Brief](#brief)      |  
+|3   | [Technologies Used](#tech)   |  
+|4   | [Approach](#approach)        |
+|5   | [Wins & Challenges](#wins)   |
+
+<a name="overview"></a>
+## 1. Overview
 For my second project on the Software Engineering Immersive at General Assembly, I was assigned a 48-hour paired hackathon to design a React application that uses a public API.
 
 This was deployed via Netlify and can be accessed [here](https://final-space-project.netlify.app/).
 
-## Brief 📃
+<a name="brief"></a>
+## 2. Brief 📃
 * Build a React application that consumes a public API
 * The app should contain several components and include a router with several 'pages'.
 * Be deployed online 
 
-## Technologies 💻
+<a name="tech"></a>
+## 3. Technologies 💻
 * React.js & React Router
 * HTML5
 * CSS3
@@ -20,18 +36,19 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 * Animate CSS 
 * [Final Space API](https://finalspaceapi.com/)
 
-## Approach ✏️
+<a name="approach"></a>
+## 4. Approach ✏️
 We first researched a number of APIs and decided to showcase data based on the TV show, Final Space.
 
-#### Day 1
+### Day 1
 * utilised Insomnia to examine what data we would receive from the various endpoints 
 * discussed how we would show this on the front end. 
 
-#### Day 2
+### Day 2
 * Constructed all of the components we required 
 * Set up the routes for the components
 
-#### Day 3 (AM)
+### Day 3 (AM)
 * Worked on styling 
 * Refactored code 
 
@@ -97,5 +114,6 @@ useEffect(() => {
 
 #### Individual Episodes Page
 
-## Wins 🏆
+<a name="wins"></a>
+## 5. Wins 🏆
 * Successfully mapping data from a public API
