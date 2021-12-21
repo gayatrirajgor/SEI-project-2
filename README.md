@@ -147,5 +147,9 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 #### Individual Episodes Page
 
 <a name="wins"></a>
-## 5. Wins 🏆
+## 5. Wins & Challenges 🏆
+### Wins
 * Successfully mapping data from a public API
+
+### Challenges 
+
