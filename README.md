@@ -183,9 +183,10 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 ## 5. Wins & Challenges 🏆
 ### Wins
 * Successfully mapping data from a public API
+* After only a week of learning React, I was proud of the functionality we were able to produce in the two days we worked on this project.
 
 ### Challenges 
-I was using Bulma for the first time throughout this project, thus it took some time to become familiar with the framework. However, after I realised how it worked, I could see the advantages of using it for styling.
+* I was using Bulma for the first time throughout this project, thus it took some time to become familiar with the framework. However, after I realised how it worked, I could see the advantages of using it for styling.
 
 <a name="ideas"></a>
 ## 6. Future Ideas 💭
