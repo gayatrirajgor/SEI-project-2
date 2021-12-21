@@ -176,7 +176,35 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 
 <a name="episode"></a>
 ### Individual Episodes Page
+We utilised an Axios GET request to get the information of the episode by the id to retrieve the data about a particular episode. The retrieved data was then shown on the front end, as seen below.
 
+```js
+<div className="column is-half animate__animated animate__slow animate__slideInLeft">
+                    <figure className="image" id="episode-image">
+                      <img src={episode.img_url} alt={episode.name}/>
+                    </figure>
+                  </div>
+                  <div className="column is-half animate__animated animate__slow animate__slideInRight">
+                    <div className="tile is-ancestor is-vertical">
+                      <div className="tile is-parent">
+                        <div className="tile is-child box">
+                          <p className="title has-text-weight-normal is-6"><i className="fas fa-video"></i> Directed by:</p>
+                          <p>{episode.director}</p>
+                        </div>
+                        <div className="tile is-child box">
+                          <p className="title has-text-weight-normal is-6"><i className="fas fa-broadcast-tower"></i> Air Date</p>
+                          <p>{episode.air_date}</p>
+                        </div>
+                      </div>
+                      <div className="tile is-parent">
+                        <div className="tile is-child box">
+                          <p className="title is-6 has-text-weight-normal"><i className="fas fa-pencil-alt"></i> Written By</p>
+                          <p>{episode.writer}</p>
+                        </div>
+                      </div>
+```
+
+![Screenshot 2021-12-21 at 21 52 23](https://user-images.githubusercontent.com/59033443/147002227-9686382d-22e4-4975-ab00-4ea53e7331c5.png)
 
 
 <a name="wins"></a>
