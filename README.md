@@ -10,6 +10,7 @@ by [Gayatri](https://github.com/gayatrirajgor) and [Ricardo](https://github.com/
 |3   | [Technologies Used](#tech)   |  
 |4   | [Approach](#approach)        |
 |5   | [Wins & Challenges](#wins)   |
+|6   | [Future Ideas](#ideas)       |
 
 <a name="overview"></a>
 ## 1. Overview
@@ -185,3 +186,7 @@ In order to display the quotes on the front end, we utilised `filter` to return 
 
 ### Challenges 
 
+<a name="ideas"></a>
+## 6. Future Ideas 💭
+* Mobile responsive 
+* Add filter features
