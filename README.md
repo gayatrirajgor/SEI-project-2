@@ -11,6 +11,7 @@ by [Gayatri](https://github.com/gayatrirajgor) and [Ricardo](https://github.com/
 |4   | [Approach](#approach)        |
 |5   | [Wins & Challenges](#wins)   |
 |6   | [Future Ideas](#ideas)       |
+|7   | [Result](#result)
 
 <a name="overview"></a>
 ## 1. Overview
@@ -80,8 +81,6 @@ The routes to the various pages were built with React as well as BrowserRouter, 
 ### Homepage
 The homepage included a hero image along with two buttons. The first button sends the user to all of the show's characters, while the second button brings the user to all of the show's episodes.
 
-<img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
-
 <a name="characters"></a>
 ### All Characters 
 To display all of the show's characters, we used an axios request from the API within a `useEffect` and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma. The cards were then wrapped in a link, allowing the user to click on the card to learn more about the particular characters and episodes.
@@ -99,8 +98,6 @@ useEffect(()=> {
     getData()
   },[])
 ```
-<img width="1433" alt="Screenshot 2021-12-20 at 19 06 47" src="https://user-images.githubusercontent.com/59033443/146819523-6ee83738-8d7d-4099-90a2-91a6642692be.png">
-
 #### Search
 We gave the user the ability to search for characters by adding a search option. To do this, we utilised a `useEffect` to search through the characters array and return the character that matched what the user typed into the search field. 
 The screenshot below shows that when a user types 'q' into the search bar, the characters that begin with Q are retrieved.
@@ -135,8 +132,6 @@ useEffect(() => {
     getData()
   },[])
 ```
-<img width="1694" alt="Screenshot 2021-12-21 at 17 50 16" src="https://user-images.githubusercontent.com/59033443/146975745-399082ab-cbd0-4a73-8ad2-210632ed2b0c.png">
-
 
 <a name="character"></a>
 ### Individual Characters Page
@@ -171,8 +166,6 @@ In order to display the quotes on the front end, we utilised `filter` to return 
                   )
 })}
 ```
-<img width="1671" alt="Screenshot 2021-12-21 at 17 22 05" src="https://user-images.githubusercontent.com/59033443/146972339-2c318540-ada5-491b-99f8-e310ace8ab97.png">
-
 
 <a name="episode"></a>
 ### Individual Episodes Page
@@ -204,9 +197,6 @@ We utilised an Axios GET request to get the information of the episode by the id
                       </div>
 ```
 
-![Screenshot 2021-12-21 at 21 52 23](https://user-images.githubusercontent.com/59033443/147002227-9686382d-22e4-4975-ab00-4ea53e7331c5.png)
-
-
 <a name="wins"></a>
 ## 5. Wins & Challenges 🏆
 ### Wins
@@ -220,3 +210,21 @@ We utilised an Axios GET request to get the information of the episode by the id
 ## 6. Future Ideas 💭
 * Mobile responsive 
 * Add filter features
+
+<a name="result"></a>
+## 7. Result
+### Homepage
+<img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
+
+### All Characters Page
+<img width="1433" alt="Screenshot 2021-12-20 at 19 06 47" src="https://user-images.githubusercontent.com/59033443/146819523-6ee83738-8d7d-4099-90a2-91a6642692be.png">
+
+### All Episodes Page
+<img width="1694" alt="Screenshot 2021-12-21 at 17 50 16" src="https://user-images.githubusercontent.com/59033443/146975745-399082ab-cbd0-4a73-8ad2-210632ed2b0c.png">
+
+### Individual Character Page
+<img width="1671" alt="Screenshot 2021-12-21 at 17 22 05" src="https://user-images.githubusercontent.com/59033443/146972339-2c318540-ada5-491b-99f8-e310ace8ab97.png">
+
+### Individual Episode Page
+
+![Screenshot 2021-12-21 at 21 52 23](https://user-images.githubusercontent.com/59033443/147002227-9686382d-22e4-4975-ab00-4ea53e7331c5.png)
