@@ -40,19 +40,15 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 
 <a name="approach"></a>
 ## 4. Approach ✏️
-We first researched a number of APIs and decided to showcase data based on the TV show, Final Space.
 
 ### Day 1
-* Utilised Insomnia to examine what data we would receive from the various endpoints 
-* Discussed how we would show this on the front end. 
+We first researched a number of APIs and decided to showcase data based on the TV show, Final Space. After deciding on the API, we utilised Insomnia to examine what data we would receive from the various endpoints and discussed how we would show this on the front end. 
 
 ### Day 2
-* Constructed all of the components we required 
-* Set up the routes for the components
+On the second day, we constructed all of the components we required and also set up the routes for them.
 
 ### Day 3 (AM)
-* Worked on styling 
-* Refactored code 
+On the day of our submission, we spent the morning working on styling and refactoring code. 
 
 ### Routes
 The routes to the various pages were built with React as well as BrowserRouter, Switch and Route from React-Router-DOM.
@@ -204,7 +200,7 @@ We utilised an Axios GET request to get the information of the episode by the id
 * After only a week of learning React, I was proud of the functionality we were able to produce in the two days we worked on this project.
 
 ### Challenges 
-* I was using Bulma for the first time throughout this project, thus it took some time to become familiar with the framework. However, after I realised how it worked, I could see the advantages of using it for styling.
+* I was using Bulma for the first time throughout this project, thus it took some time to become familiar with the framework. However, after I realised how it worked, I could see the advantages of using it for styling, such as Bulma being lightweight as well as simple to customise the framework. 
 
 <a name="ideas"></a>
 ## 6. Future Ideas 💭
