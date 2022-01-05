@@ -7,11 +7,12 @@ by [Gayatri](https://github.com/gayatrirajgor) and [Ricardo](https://github.com/
 |----|------------------------------|
 |1   | [Project Overview](#overview)|
 |2   | [Project Brief](#brief)      |  
-|3   | [Technologies Used](#tech)   |  
-|4   | [Approach](#approach)        |
-|5   | [Wins & Challenges](#wins)   |
-|6   | [Future Ideas](#ideas)       |
-|7   | [Result](#result)
+|3   | [Technologies Used](#tech)   |
+|4   | [Concept](#concept)          |
+|5   | [Approach](#approach)        |
+|6   | [Wins & Challenges](#wins)   |
+|7   | [Future Ideas](#ideas)       |
+|8   | [Result](#result)
 
 <a name="overview"></a>
 ## 1. Overview
@@ -38,8 +39,12 @@ This was deployed via Netlify and can be accessed [here](https://final-space-pro
 * Animate CSS 
 * [Final Space API](https://finalspaceapi.com/)
 
+<a name="concept"></a>
+## 4. Concept 🧐
+The idea behind this project was to showcase information on the characters from the show Final Space as well as information about the episodes. All of the data presented was obtained from a public API.
+
 <a name="approach"></a>
-## 4. Approach ✏️
+## 5. Approach ✏️
 
 ### Day 1
 We first researched a number of APIs and decided to showcase data based on the TV show, Final Space. After deciding on the API, we utilised Insomnia to examine what data we would receive from the various endpoints and discussed how we would show this on the front end. 
@@ -79,7 +84,7 @@ The homepage included a hero image along with two buttons. The first button send
 
 <a name="characters"></a>
 ### All Characters 
-To display all of the show's characters, we used an axios request from the API within a `useEffect` and modified the hook's state. We then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma. The cards were then wrapped in a link, allowing the user to click on the card to learn more about the particular characters and episodes.
+To display all of the show's characters, I used an Axios request from the API within a `useEffect` and modified the hook's state. I then used a map function on the array of characters to display them on the website, and they were styled as cards with Bulma. The cards were then wrapped in a link, allowing the user to click on the card to learn more about the particular characters and episodes.
 
 ```js
 useEffect(()=> {
@@ -194,7 +199,7 @@ We utilised an Axios GET request to get the information of the episode by the id
 ```
 
 <a name="wins"></a>
-## 5. Wins & Challenges 🏆
+## 6. Wins & Challenges 🏆
 ### Wins
 * Successfully mapping data from a public API
 * After only a week of learning React, I was proud of the functionality we were able to produce in the two days we worked on this project.
@@ -203,12 +208,12 @@ We utilised an Axios GET request to get the information of the episode by the id
 * I was using Bulma for the first time throughout this project, thus it took some time to become familiar with the framework. However, after I realised how it worked, I could see the advantages of using it for styling, such as Bulma being lightweight as well as simple to customise the framework. 
 
 <a name="ideas"></a>
-## 6. Future Ideas 💭
+## 7. Future Ideas 💭
 * Mobile responsive 
 * Add filter features
 
 <a name="result"></a>
-## 7. Result
+## 8. Result
 ### Homepage
 <img width="1430" alt="Screenshot 2021-11-14 at 17 16 53" src="https://user-images.githubusercontent.com/59033443/141691253-7a066424-cae5-44c1-a04e-8bf3cc5f91cb.png">
 
